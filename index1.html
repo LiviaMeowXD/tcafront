@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felis Kingdom | Criação</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/feliskingdom.jpg">
+</head>
+<body>
+
+   <my-header>
+    <img src="./img/feliskingdom.jpg" alt="logo">
+   </my-header>
+
+    <my-nav>
+    </my-nav>
+
+    <br>
+    <div id="mensagem">Preencha os dados para criar um novo produto.</div>
+    <main>
+
+        <form id="produtoForm">    
+            <input type="hidden" id="produtoId">
+            <input type="text" id="produtoNome" placeholder="Nome do Produto" required>
+            <br>
+            <br>
+            <textarea id="produtoDesc" placeholder="Ingredientes" rows="3" required></textarea>
+            <br>
+            <br>
+            <input type="number" id="produtoPorcao" placeholder="Porção" required>
+            <br>
+            <br>
+            <input type="text" id="produtoPreco" placeholder="R$ 000,00" required>
+            <br>
+            <br>
+            <button type="submit" id="submitBtn">Criar produto</button>
+        </form>
+
+        <div id="produtosContainer">   
+        </div>
+    </main>
+
+    <my-footer>
+    </my-footer>
+
+    <script type="module" src="./js/2criar.js"></script>
+    <script type="module" src="./js/pgIndex.js"></script>
+</body>
+</html>

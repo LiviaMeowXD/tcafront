@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth; /* Rolagem suave ao clicar em âncoras */
+  text-size-adjust: 100%; /* Melhora renderização de texto no mobile */
+}
+
+body{
+  background-color: rgb(184, 185, 252);
+  color: var(--letter-color);
+  font-family: "Arial, sans-serif";
+}
+
+/* alguns navegadores possuem fontes padrão. A regra abaixo garante que os elementos herdem a fonte do elemento pai */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Ajustes de parágrafos e títulos */
+p, h1, h2, h3, h4, h5, h6, a {
+  overflow-wrap: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+th, td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
